@@ -1,0 +1,256 @@
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Quicksand";
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #b3c9cb;
+}
+
+.App {
+  background-color: white;
+  display: flex;
+  flex-direction: row;
+  width: 93%;
+  height: 900px;
+  margin-top: 1.5%;
+  margin-left: 3.5%;
+  align-items: center;
+  justify-content: space-between;
+  padding: 25px;
+  border-radius: 8px;
+}
+
+.container {
+  margin-left: 30px;
+  width: 500px;
+  height: 850px;
+}
+
+.logo {
+  margin-bottom: 60px;
+  width: 160px;
+  height: 50px;
+  border-radius: 8px;
+  text-align: center;
+  justify-content: center;
+  background-color: #b3c9cb;
+  font-size: 32px;
+}
+
+.text-logo {
+  text-align: center;
+}
+
+.infomation {
+  display: flex;
+  height: 350px;
+  align-items: flex-start;
+  flex-direction: column;
+}
+
+h1 {
+  margin-top: 40px;
+  font-size: 70px;
+  overflow-wrap: break-word;
+}
+
+.text {
+  font-size: 20px;
+  overflow-wrap: break-word;
+}
+
+.button {
+  margin-top: 40px;
+}
+
+.button .login {
+  background-color: #27727d;
+  color: white;
+  text-transform: none;
+  border-radius: 50px;
+  width: 140px;
+  height: 70px;
+  font-size: 30px;
+}
+
+.button .signup {
+  margin-left: 40px;
+  background-color: #dde4e6;
+  color: #27727d;
+  border-radius: 50px;
+  width: 140px;
+  height: 70px;
+  font-size: 30px;
+}
+
+.button .login:hover {
+  background-color: #246a75;
+}
+
+.button .signup:hover{
+  background-color: #cad3d5;
+}
+
+.signup  {
+  color: #27727d;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+}
+
+.image {
+  display: flex;
+}
+
+@media only screen and (min-width: 1600px) {
+  .App {
+    padding: 65px;
+  }
+}
+
+@media only screen and (min-width: 1500px) {
+  .App {
+    padding: 45px;
+  }
+}
+
+@media only screen and (max-width: 1200px) {
+  .App {
+    padding: 5px;
+  }
+}
+
+@media only screen and (max-width: 1200px) {
+  .image {
+    display: none;
+  }
+
+  .App {
+    justify-content: center;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .sign-up {
+    margin-left: 0px;
+    margin-top: 10px;
+    width: 350px;
+    height: 150px;
+  }
+  .container {
+    margin-left: 10px;
+    width: 450px;
+    height: 850px;
+  }
+}
+
+@media only screen and (max-width: 410px) {
+  .button {
+    margin-top: 120px;
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  .container {
+    margin-left: 0px;
+    width: 390px;
+    height: 750px;
+  }
+  h1 {
+    margin-top: 0px;
+    font-size: 70px;
+    overflow-wrap: break-word;
+  }
+}
+
+@media only screen and (max-width: 350px) {
+  .button .signup {
+    margin-left: 10px;
+  }
+}
+
+/* Start Style Sign in */
+#form {
+  width: 350px;
+  background-color: white;
+  padding: 20px;
+  font-size: 14px;
+}
+
+#form h1 {
+  text-align: center;
+  color: black;
+}
+
+.input-control {
+  display: flex;
+  flex-direction: column;
+}
+
+.input-control input {
+  margin: 10px 10px 10px 0px;
+  font-size: 14px;
+  border-radius: 8px;
+  display: block;
+  border: 2px solid #f0f0f0;
+  padding: 10px;
+  width: 100%;
+}
+
+.button-r ul {
+  display: flex;
+  list-style: none;
+  flex-direction: row;
+}
+
+.button-r ul li {
+  padding: 7px;
+  margin-bottom: 8px;
+  text-align: center;
+  font-weight: bold;
+  justify-content: center;
+  cursor: pointer;
+  border-radius: 50px;
+  font-size: 20px;
+  width: 100%;
+  height: 40px;
+}
+
+.login-r, .signup-r {
+  background-color: #27727d;
+  color: white;
+}
+
+.login-r:hover,
+.signup-r:hover {
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.login-r a, .signup-r a {
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+}
+
+.info .link {
+  color: #27727d;
+}
+
+@media only screen and (max-width: 375px) {
+  #form {
+    width: 310px;
+  }
+}
+
+@media only screen and (max-width: 335px) {
+  #form {
+    width: 270px;
+  }
+}
+/* End Style Sign in */
